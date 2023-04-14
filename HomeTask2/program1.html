@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program 1</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        box-sizing: border-box;
+      }
+
+      div {
+        border: 1rem solid pink;
+        padding: 10rem;
+        background-color: aliceblue;
+      }
+      #btn {
+        display: inline-block;
+        background: #ff004f;
+        color: white;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+      }
+      #btn:hover {
+        background-color: green;
+      }
+    </style>
+    <script>
+      function delimiters() {
+        let a = document.getElementById("input").value;
+        let array = a.split("");
+        let m = array.join(",");
+        document.getElementById("output").innerHTML = m;
+      }
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <h1>Enter a String</h1>
+      <input type="text" id="input" />
+      <input type="button" id="btn" value="submit" onclick="delimiters()" />
+      <h3 id="output"></h3>
+    </div>
+  </body>
+</html>
